@@ -1,2 +1,3 @@
-# gerador-de-certificados
-Gerador de certificados em PHP.
+# Gerador de Certificados em PHP
+
+Código desenvolvido para gerar automaticamente certificados de alunos e exporta-los em .jpg
