@@ -114,6 +114,7 @@
 // --------------------------------------------------
 $(function() { //shorthand document.ready function
     $('#gerar_certificados').on('submit', function(e) { //use on if jQuery 1.7+
+		e.preventDefault();
 		// PEGA OS DADOS DO FORM
 		var nome_curso = $('#nome_curso').val();
 		var carga_horaria = $('#carga_curso').val();
