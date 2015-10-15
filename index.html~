@@ -118,7 +118,7 @@ $(function() {
 		e.preventDefault();
 
 		// PEGA OS DADOS DO FORM
-		var nome_curso = $('#nome_curso').val().toLowerCase();
+		var nome_curso = $('#nome_curso').val();
 		var carga_horaria = $('#carga_curso').val();
 		var local_e_data = $('#local_e_data').val();
 		var nome_assinatura_1 = $('#nome_assinatura_1').val();
