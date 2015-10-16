@@ -21,6 +21,7 @@
 				  <option value="2">JUIQUIÁ</option>
 				  <option value="3">ALM. TAMANDARE</option>
 				  <option value="4">F.R.G</option>
+				  <option value="4">CAMPO MAGRO</option>
 				</select>
 			  </div>
 			</div>
@@ -153,16 +154,19 @@ $(function() {
 		/ 3 = F.R.G
 		*/
 		if (valores.selectedIndex == 0) {
-			var base = '&base=./bases/certificado_contenda.png';
+			var base = '&base=./bases/base-contenda.png';
 		}
 		if (valores.selectedIndex == 1) {
-			var base = '&base=./bases/certificado_juquia.png';
+			var base = '&base=./bases/base-juquia.png';
 		}
 		if (valores.selectedIndex == 2) {
-			var base = '&base=./bases/certificado_almirante_tamandare.png';
+			var base = '&base=./bases/base-almirante-tamandare.png';
 		}
 		if (valores.selectedIndex == 3) {
-			var base = '&base=./bases/certificado_f-r-g.png';
+			var base = '&base=./bases/base-f-r-g.png';
+		}
+		if (valores.selectedIndex == 4) {
+			var base = '&base=./bases/base-campo-magro.png';
 		}
 		
 		// SEPARA A LISTA DE NOMES E FAZ O LOOP

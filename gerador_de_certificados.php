@@ -13,7 +13,7 @@
 if (isset($_GET["base"])) {
 	$jpg_image = imagecreatefrompng($_GET["base"]);
 } else {
-	$jpg_image = imagecreatefrompng('./bases/certificado_base.png');
+	$jpg_image = imagecreatefrompng('./bases/base-campo-magro.png');
 }
 
 // DEFINE AS FONTES ULTILIZADAS
