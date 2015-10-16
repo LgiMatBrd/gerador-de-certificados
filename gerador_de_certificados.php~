@@ -13,7 +13,7 @@
 if (isset($_GET["base"])) {
 	$jpg_image = imagecreatefrompng($_GET["base"]);
 } else {
-	$jpg_image = imagecreatefrompng('./bases/certificado_base.png');
+	$jpg_image = imagecreatefrompng('./bases/base-campo-magro.png');
 }
 
 // DEFINE AS FONTES ULTILIZADAS
@@ -43,16 +43,16 @@ $declaracao_part_2 = "curso de ".$nome_curso." com a carga horária de ".$carga_
 $cor = imagecolorallocate($jpg_image, 51, 51, 102);
 
 // ESCREVE OS DADOS NO CERTIFICADO
-imagettftext($jpg_image, 35, 0, 200, 275, $cor, $fonte_nome, $nome_aluno);
-imagettftext($jpg_image, 15, 0, 180, 315, $cor, $fonte_padrao, $declaracao_part_1);
-imagettftext($jpg_image, 15, 0, 180, 333, $cor, $fonte_padrao, $declaracao_part_2);
-imagettftext($jpg_image, 10, 0, 485, 410, $cor, $fonte_padrao, $local_e_data);
-imagettftext($jpg_image, 8, 0, 140, 480, $cor, $fonte_padrao, '_____________________________');
-imagettftext($jpg_image, 8, 0, 140, 500, $cor, $fonte_padrao, $assinatura_1_nome);
-imagettftext($jpg_image, 8, 0, 140, 515, $cor, $fonte_padrao, $assinatura_1_funcao);
-imagettftext($jpg_image, 8, 0, 595, 480, $cor, $fonte_padrao, '_____________________________');
-imagettftext($jpg_image, 8, 0, 595, 500, $cor, $fonte_padrao, $assinatura_2_nome);
-imagettftext($jpg_image, 8, 0, 595, 515, $cor, $fonte_padrao, $assinatura_2_funcao);
+imagettftext($jpg_image, 130, 0, 700, 1030, $cor, $fonte_nome, $nome_aluno);
+imagettftext($jpg_image, 45, 0, 800, 1200, $cor, $fonte_padrao, $declaracao_part_1);
+imagettftext($jpg_image, 45, 0, 800, 1270, $cor, $fonte_padrao, $declaracao_part_2);
+imagettftext($jpg_image, 35, 0, 2000, 1400, $cor, $fonte_padrao, $local_e_data);
+imagettftext($jpg_image, 35, 0, 500, 1700, $cor, $fonte_padrao, '_____________________________');
+imagettftext($jpg_image, 35, 0, 500, 1770, $cor, $fonte_padrao, $assinatura_1_nome);
+imagettftext($jpg_image, 35, 0, 500, 1820, $cor, $fonte_padrao, $assinatura_1_funcao);
+imagettftext($jpg_image, 35, 0, 1800, 1700, $cor, $fonte_padrao, '_____________________________');
+imagettftext($jpg_image, 35, 0, 1800, 1770, $cor, $fonte_padrao, $assinatura_2_nome);
+imagettftext($jpg_image, 35, 0, 1800, 1820, $cor, $fonte_padrao, $assinatura_2_funcao);
 
 // HEADER PARA FORÇAR O DOWNLAOD DA IMAGEM
 $nome_aluno_limpo = strtolower ($nome_aluno_limpo);
