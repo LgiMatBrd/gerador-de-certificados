@@ -47,12 +47,12 @@ imagettftext($jpg_image, 130, 0, 700, 1030, $cor, $fonte_nome, $nome_aluno);
 imagettftext($jpg_image, 45, 0, 800, 1200, $cor, $fonte_padrao, $declaracao_part_1);
 imagettftext($jpg_image, 45, 0, 800, 1270, $cor, $fonte_padrao, $declaracao_part_2);
 imagettftext($jpg_image, 35, 0, 2000, 1400, $cor, $fonte_padrao, $local_e_data);
-imagettftext($jpg_image, 35, 0, 500, 1800, $cor, $fonte_padrao, '_____________________________');
-imagettftext($jpg_image, 35, 0, 500, 1870, $cor, $fonte_padrao, $assinatura_1_nome);
-imagettftext($jpg_image, 35, 0, 500, 1920, $cor, $fonte_padrao, $assinatura_1_funcao);
-imagettftext($jpg_image, 35, 0, 1900, 1800, $cor, $fonte_padrao, '_____________________________');
-imagettftext($jpg_image, 35, 0, 1900, 1870, $cor, $fonte_padrao, $assinatura_2_nome);
-imagettftext($jpg_image, 35, 0, 1900, 1920, $cor, $fonte_padrao, $assinatura_2_funcao);
+imagettftext($jpg_image, 35, 0, 500, 1810, $cor, $fonte_padrao, '_____________________________');
+imagettftext($jpg_image, 35, 0, 500, 1880, $cor, $fonte_padrao, $assinatura_1_nome);
+imagettftext($jpg_image, 35, 0, 500, 1930, $cor, $fonte_padrao, $assinatura_1_funcao);
+imagettftext($jpg_image, 35, 0, 1900, 1810, $cor, $fonte_padrao, '_____________________________');
+imagettftext($jpg_image, 35, 0, 1900, 1880, $cor, $fonte_padrao, $assinatura_2_nome);
+imagettftext($jpg_image, 35, 0, 1900, 1930, $cor, $fonte_padrao, $assinatura_2_funcao);
 
 // HEADER PARA FORÇAR O DOWNLAOD DA IMAGEM
 $nome_aluno_limpo = strtolower ($nome_aluno_limpo);

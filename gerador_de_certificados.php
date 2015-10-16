@@ -44,9 +44,9 @@ $cor = imagecolorallocate($jpg_image, 51, 51, 102);
 
 // ESCREVE OS DADOS NO CERTIFICADO
 imagettftext($jpg_image, 130, 0, 700, 1030, $cor, $fonte_nome, $nome_aluno);
-imagettftext($jpg_image, 45, 0, 800, 1200, $cor, $fonte_padrao, $declaracao_part_1);
-imagettftext($jpg_image, 45, 0, 800, 1270, $cor, $fonte_padrao, $declaracao_part_2);
-imagettftext($jpg_image, 35, 0, 2000, 1400, $cor, $fonte_padrao, $local_e_data);
+imagettftext($jpg_image, 45, 0, 700, 1200, $cor, $fonte_padrao, $declaracao_part_1);
+imagettftext($jpg_image, 45, 0, 700, 1270, $cor, $fonte_padrao, $declaracao_part_2);
+imagettftext($jpg_image, 35, 0, 1900, 1400, $cor, $fonte_padrao, $local_e_data);
 imagettftext($jpg_image, 35, 0, 500, 1810, $cor, $fonte_padrao, '_____________________________');
 imagettftext($jpg_image, 35, 0, 500, 1880, $cor, $fonte_padrao, $assinatura_1_nome);
 imagettftext($jpg_image, 35, 0, 500, 1930, $cor, $fonte_padrao, $assinatura_1_funcao);
